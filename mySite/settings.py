@@ -14,10 +14,16 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, 'public')
+PROJECT_DIR = os.path.dirname(__file__)
+PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public')
+STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
 STATIC_URL = '/dist/'
+
+MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
+MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'dist'),
+    os.path.join(PROJECT_DIR, 'static'),
 )
 
 
@@ -30,7 +36,7 @@ SECRET_KEY = 'h(i(bta8y!z5w8k!*^q7c_$b-&)8@_=y%rg^k$zw86s%oey#ye'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['test-mskuroedov.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
