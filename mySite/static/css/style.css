@@ -1,8 +1,17 @@
 body {
-    background-image: url('../assets/background.png');
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: white;
+    background-image:url('https://www.seotwist.com/wp-content/uploads/2017/08/online-SEO-coding-website-development-e1501774285927.jpg');
+    padding: 0;
+    margin: 0;
+
+    color: #fff;
+}
+
+#gradient {
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .blue {
@@ -20,12 +29,26 @@ a:hover {
     vertical-align: middle;
 }
 
-header {
+.nav a {
     color: #fff;
+    font-family: 'advent', sans-serif;
+    font-size: 2rem;
 }
 
-header .container {
-    padding-top: 50px;
+.nav-link {
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.logo {
+    font-family: 'advent', sans-serif;
+    font-size: 3rem;
+    color: #fff;
 }
 
 header .fa {
@@ -38,19 +61,11 @@ header .fa:hover {
     color: rgb(55, 100, 235);
 }
 
-.main-section {
-    padding-top: 12%;
-}
-
-.main-section h1 {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 80px;
-}
-
-.main-section h5 {
-    font-size: 24px;
-    font-family: 'CS', sans-serif;
-    line-height: 1.333;
+.avatar {
+    border-radius: 100%;
+    border: 20px solid white;
+    padding: 0;
+    color: white;
 }
 
 footer {
@@ -78,12 +93,13 @@ footer a:hover {
 }
 
 .telegramm:before {
-    content: url('../assets/telegram.svg');
+    content: url('/assets/telegram.svg');
     position: absolute;
     left: -40px;
-    top:-5px;
+    top: -5px;
     background-size: 20px auto;
 }
+
 .telegramm:hover:before {
     fill: red;
 }
@@ -231,4 +247,11 @@ footer a:hover {
         margin-right: 42px;
         margin-left: 0;
     }
+}
+
+@font-face {
+    font-family: 'advent';
+    src: url('./fonts/adventProThin/logo.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
