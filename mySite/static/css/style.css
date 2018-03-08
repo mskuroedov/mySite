@@ -241,10 +241,44 @@ footer a:hover {
     width: 100%;
     background-color: rgb(55, 100, 235);
 }
+
 .first-section, .second-section, .third-section {
     min-height: 780px;
 
     background: transparent;
+}
+
+.scroll-down-arrow {
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    font-size: 3rem;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+
+    animation: color 0.2s ease-in-out infinite;
+    -webkit-animation: color 0.2s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes color {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: #fff;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -254,9 +288,9 @@ footer a:hover {
     }
 
     .first-section, .second-section, .third-section {
-    min-height: 1280px;
-    background: transparent;
-}
+        min-height: 1280px;
+        background: transparent;
+    }
 
 }
 
