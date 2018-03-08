@@ -1,5 +1,5 @@
 body {
-    background-image:url('https://www.seotwist.com/wp-content/uploads/2017/08/online-SEO-coding-website-development-e1501774285927.jpg');
+    /*background-image:url('https://www.seotwist.com/wp-content/uploads/2017/08/online-SEO-coding-website-development-e1501774285927.jpg');*/
     padding: 0;
     margin: 0;
 
@@ -241,12 +241,23 @@ footer a:hover {
     width: 100%;
     background-color: rgb(55, 100, 235);
 }
+.first-section, .second-section, .third-section {
+    min-height: 780px;
+
+    background: transparent;
+}
 
 @media (max-width: 1024px) {
     .social a {
         margin-right: 42px;
         margin-left: 0;
     }
+
+    .first-section, .second-section, .third-section {
+    min-height: 1280px;
+    background: transparent;
+}
+
 }
 
 @font-face {
@@ -255,3 +266,4 @@ footer a:hover {
     font-weight: normal;
     font-style: normal;
 }
+

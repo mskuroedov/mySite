@@ -3,81 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+{#    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
     <link rel="stylesheet" href="/static/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="/static/css/fonts/ClearSans/clearsans_regular_macroman/stylesheet.css">
     <link rel="stylesheet" href="/static/css/fonts/font-awesome-4.7.0%202/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/preloader-css.css">
 </head>
 <body>
-<!--<div id="gradient" />-->
-<!--<div class="menu" id="scaling-menu">-->
-    <!--<div class="container px-0">-->
-        <!--<div class="row ">-->
-            <!--<div class="col-12 ">-->
-                <!--<i class="float-right fa fa-times" id="close-menu" aria-hidden="true"></i>-->
-            <!--</div>-->
-            <!--<div class="col-12 text-center custom-menu">-->
-                <!--<ul>-->
-                    <!--<li><span white>Контакты</span></li>-->
-                    <!--<li><span yellow>Проекты</span></li>-->
-                    <!--<li><span green>О нас</span></li>-->
-                    <!--<li><span red>Ну хоть что-нибудь</span></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<header>
-    <div class="container">
-        <nav class="nav p-3">
-            <h2 class="logo">MSKuroedov</h2>
-            <a class="nav-link ml-auto active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link " href="#"></a>
-        </nav>
-    </div>
-</header>
+<div class=" preloader">
+    <div class="morph"></div>
+    <div class="circle"></div>
+    <div id="lineDrawing">
 
-<section>
-    <div class="container main-section">
-        <div class="row d-flex align-items-center">
-            <div class="col-5 px-0">
-                <img src="http://www.designshock.com/wp-content/uploads/2016/04/man-1-200.jpg" class="avatar"  alt="">
-            </div>
-            <div class="col-7  ">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa dicta doloribus eaque enim libero, natus quasi repellendus sunt. Dolorem esse exercitationem ipsa, ipsam iusto quam sapiente. Accusantium, ea ut.</p>
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa dicta doloribus eaque enim libero, natus quasi repellendus sunt. Dolorem esse exercitationem ipsa, ipsam iusto quam sapiente. Accusantium, ea ut.</p>
+        <svg id="quote1TextSVG" x="0" y="0" viewBox="0 0 500.3 395" class="heart ">
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ffff00"/>
+                <stop offset="60%" stop-color="#009999"/>
+            </linearGradient>
+            <polyline id="quote1Heart" class="quote1Heart" points="191.9,118.2 128,7.3 463.8,7.3 295.9,298 233.2,189.5"
+                      style="stroke-dashoffset: 0px;" stroke="url(#linear)"></polyline>
+            <rect x="170" y="112.9" class="quoteTextBG" width="93" height="82"></rect>
+            <rect x="370" y="43.9" class="quoteTextBG" width="93" height="82"></rect>
+            <text x="139.2858" y="109.9107" class="quoteText quote1TextTop" data-svg-origin="239.28125 50.984375"
+                  transform="matrix(1,0,0,1,0,0)">LOVE
+            </text>
+            <text x="300.7142" y="179.7315" class="quoteText quote1TextBottom" data-svg-origin="-0.703125 120.796875"
+                  transform="matrix(1,0,0,1,0,0)">FRONT-END
+            </text>
+        </svg>
+        <svg id="quote2TextSVG" x="0" y="0" viewBox="0 0 505.3 443" class="double-heart">
+            <linearGradient id="linear2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="red"/>
+                <stop offset="80%" stop-color="#321321"/>
+            </linearGradient>
+            <polyline id="quotePositiveTop" class="quotePositiveLines"
+                      points="199.1,74.2 164.9,15 17.1,271 312.7,271 240.7,146.3 " style="stroke-dashoffset: 675px;"
+                      stroke="url(#linear2)"></polyline>
+            <polyline id="quotePositiveBottom" class="quotePositiveLines"
+                      points="256.8,364 293.7,428 441.4,172 145.9,172 216.2,293.8 " style="stroke-dashoffset: 738px;"
+                      stroke="url(#linear2)"></polyline>
+            <rect x="169.9" y="69.9" class="quoteTextBG" width="93" height="82"></rect>
+            <rect x="192.4" y="289.5" class="quoteTextBG" width="93" height="82"></rect>
+            <text x="53.7278" y="137.4443" id="quote2TextTop" class="quoteText" data-svg-origin="183.71875 123.203125"
+                  transform="matrix(1,0,0,1,0,0)">WEB-DEV
+            </text>
+            <text x="89.2856" y="356.3108" id="quote2TextBottom" class="quoteText"
+                  data-svg-origin="-0.703125 342.078125" transform="matrix(1,0,0,1,0,0)">MSKUROEDOV
+            </text>
+        </svg>
+    </div>
+</div>
+{#<header>#}
+{#    <div class="container">#}
+{#        <nav class="nav p-3">#}
+{#            <h2 class="logo">MSKuroedov</h2>#}
+{#            <a class="nav-link ml-auto active" href="#">Home</a>#}
+{#            <a class="nav-link" href="#">About</a>#}
+{#            <a class="nav-link" href="#">Projects</a>#}
+{#            <a class="nav-link " href="#"></a>#}
+{#        </nav>#}
+{#    </div>#}
+{#</header>#}
+{#<section>#}
+{#    <div class="container main-section">#}
+{#        <div class="row d-flex align-items-center">#}
+{#            <div class="col-5 px-0">#}
+{#                <img src="http://www.designshock.com/wp-content/uploads/2016/04/man-1-200.jpg" class="avatar"  alt="">#}
+{#            </div>#}
+{#            <div class="col-7  ">#}
+{#                <h4>Lorem Ipsum</h4>#}
+{#                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa dicta doloribus eaque enim libero, natus quasi repellendus sunt. Dolorem esse exercitationem ipsa, ipsam iusto quam sapiente. Accusantium, ea ut.</p>#}
+{#                <h4>Lorem Ipsum</h4>#}
+{#                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa dicta doloribus eaque enim libero, natus quasi repellendus sunt. Dolorem esse exercitationem ipsa, ipsam iusto quam sapiente. Accusantium, ea ut.</p>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<footer>#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-4 col-lg-2 px-0">#}
+{#                <a href="https://t.me/aiksu" class="telegramm">+7 (999) 156-48-06</a>#}
+{#            </div>#}
+{#            <div class="col-4 col-lg-2 px-0 ">#}
+{#                <a href="mailto:mskuroedov@gmail.com">mskuroedov@gmail.com</a>#}
+{#            </div>#}
+{#            <div class="col-12 text-left col-lg social mt-4 mt-lg-0 px-0 text-lg-right">#}
+{#                <a href="https://fb.com/hardqode"><i class="fa fa-facebook" aria-hidden="true"></i></a>#}
+{#                <a href="https://vk.com/hardqode"><i class="fa fa-vk" aria-hidden="true"></i></a>#}
+{#                <a href="https://twitter.com/hardqode"><i class="fa fa-twitter" aria-hidden="true"></i></a>#}
+{#                <a href="https://instagram.com/hardqode"><i class="fa fa-instagram" aria-hidden="true"></i></a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</footer>#} {# template site #}
 
-            </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-4 col-lg-2 px-0">
-                <a href="https://t.me/aiksu" class="telegramm">+7 (999) 156-48-06</a>
-            </div>
-            <div class="col-4 col-lg-2 px-0 ">
-                <a href="mailto:mskuroedov@gmail.com">mskuroedov@gmail.com</a>
-            </div>
-            <div class="col-12 text-left col-lg social mt-4 mt-lg-0 px-0 text-lg-right">
-                <a href="https://fb.com/hardqode"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://vk.com/hardqode"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/hardqode"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://instagram.com/hardqode"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
+<div class="first-section"  data-parallax="scroll" data-image-src="/static/assets/parallax-1.png" style="height: 780px"></div>
+
+
+<div class="second-section" data-parallax="scroll"
+         data-image-src="/static/assets/parallax-2.png" style="height: 780px">
+
+</div>
+
+<div class="third-section" data-parallax="scroll"
+         data-image-src="/static/assets/parallax-3.png" style="height: 780px">
+
+</div>
+
+
 
 <script src="/static/js/jquery-3.2.1.min.js"></script>
 <script src="/static/js/bootstrap.bundle.js"></script>
 <script src="/static/js/menu.js"></script>
+<script src="/static/js/anime.min.js"></script>
+<script src="/static/js/preloader.js"></script>
+<script src="/static/js/parallax.js"></script>
+<script>
+    {#$('.first-section').parallax({imageSrc: '/static/assets/parallax-1.png'});#}
+    {#$('.second-section').parallax({imageSrc: '/static/assets/parallax-2.png'});#}
+    {#$('.third-section').parallax({imageSrc: '/static/assets/parallax-3.png'});#}
+</script>
 </body>
 </html>

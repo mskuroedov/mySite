@@ -1,0 +1,104 @@
+body {
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.preloader {
+    z-index: 1000;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#lineDrawing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 520px;
+    /*height: 89px;*/
+    margin: auto;
+}
+
+#lineDrawing svg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    overflow: visible;
+    bottom: 0;
+    margin: auto;
+}
+
+.heart .quote1Heart {
+    stroke-dasharray: 0;
+    stroke-dasharray: 1000;
+    fill: none;
+    stroke-width: 15;
+}
+
+.heart .quoteText {
+    padding: 0.5em;
+    font-size: 65px;
+    color: white;
+    fill: white;
+    opacity: 0;
+    font-family: "Estilo";
+}
+
+.double-heart {
+    opacity: 0;
+}
+
+.double-heart polyline {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    fill: none;
+    stroke-width: 20;
+}
+
+.double-heart .quoteText {
+    padding: 0.5em;
+    font-size: 65px;
+    color: white;
+    fill: white;
+    font-family: "Estilo";
+    opacity: 0;
+}
+
+.morph {
+    position: absolute;
+    top: calc(50% - 2.5%);
+    height: 5%;
+    background-color: black;
+    width: 0px;
+    margin: auto;
+
+}
+
+.circle {
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 0px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 100%;
+    right: 0;
+    margin: auto;
+}
+
+@media (max-width:560px){
+    #lineDrawing{
+        /*width: 220px;*/
+    }
+}
+
+@font-face {
+    font-family: 'Estilo';
+    src: url('./fonts/Estilo Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
