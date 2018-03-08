@@ -32,12 +32,15 @@ body {
 }
 
 .heart .quote1Heart {
-    stroke-dasharray: 0;
     stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
     fill: none;
     stroke-width: 15;
+    opacity: 0;
 }
-
+.heart .quoteTextBG{
+    opacity: 0;
+}
 .heart .quoteText {
     padding: 0.5em;
     font-size: 65px;
